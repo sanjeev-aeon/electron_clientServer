@@ -13,8 +13,8 @@ const changeObserver = require('./changeObserver');
 const wss = new WebSocketServer({ port: appConfig.websocket.port });
 wss.on('connection', (ws) => {
     changeObserver.addWSConnection(ws);
+    ws.send('connection established');
     ws.on('close', () => {
         changeObserver.removeWSConnection(ws);
-    
     });
 });
