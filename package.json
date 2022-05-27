@@ -1,0 +1,15 @@
+{
+  "name": "clientserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "electron": "19.0.1",
+    "express":"4.18.1"
+   },
+  "author": "",
+  "license": "ISC"
+}
