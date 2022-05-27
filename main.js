@@ -4,7 +4,7 @@ global.appConfig = require('./app.config.json');
 // start server
 require('./src/server/server');
 
-const appPage = `http://127.0.0.1:${appConfig.server.port}/`;
+const appPage = `http://127.0.0.1:${appConfig.httpServer.port}/`;
 app.whenReady().then(() => {
     const win = new BrowserWindow({
        

@@ -1,5 +1,8 @@
 {
-    "server":{
+    "httpServer":{
         "port":8070
+    },
+    "websocket":{
+        "port":8071
     }
 }
